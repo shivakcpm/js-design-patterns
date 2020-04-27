@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Design Patterns</title>
+    <script type="text/javascript" src="creational/person.js"></script>
+    <script type="text/javascript" src="creational/shopper.js"></script>
+    <script type="text/javascript" src="creational/employee.js"></script>
+    <script type="text/javascript" src="creational/personFactory.js"></script>
+    <script type="text/javascript" src="structuaral/newcalculator.js"></script>
+    <script type="text/javascript" src="structuaral/oldcalculator.js"></script>
+    <script
+      type="text/javascript"
+      src="structuaral/ultimatecalculator.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="structuaral/clevercalculator.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="structuaral/decoratedcalculator.js"
+    ></script>
+    <script type="text/javascript" src="behavioral/cumulativesum.js"></script>
+    <script type="text/javascript" src="behavioral/specialmath.js"></script>
+    <script type="text/javascript" src="behavioral/command.js"></script>
+    <script type="text/javascript" src="behavioral/usersubscription.js"></script>
+    <script type="text/javascript" src="executor.js"></script>
+  </head>
+  <body>
+    <h1 style="text-align: center;">Design Patterns</h1>
+    <section>
+      <header>Task1 - Creational Design Patterns</header>
+      <div style="margin: 10px;">
+        <button onclick="createInstance('person')">Create Person</button>
+      </div>
+      <div style="margin: 10px;">
+        <button onclick="createInstance('shopper')">Create Shopper</button>
+      </div>
+      <div style="margin: 10px;">
+        <button onclick="createInstance('employee')">Create Employee</button>
+      </div>
+    </section>
+
+    <section>
+      <header>Task2 - Structuaral Design Patterns</header>
+      <div style="margin: 10px;">
+        <button onclick="calculate(10,12,'add')">Addition</button>
+      </div>
+      <div style="margin: 10px;">
+        <button onclick="calculate(10,12,'sub')">subtraction</button>
+      </div>
+      <div style="margin: 10px;">
+        <button onclick="calculate(10,12,'multiply')">Multiplication</button>
+      </div>
+      <div style="margin: 10px;">
+        <button onclick="calculate(10,12,'divide')">Division</button>
+      </div>
+    </section>
+
+    <section>
+      <header>Task3 - Behavioral Design Patterns</header>
+      <h3>Task-A</h3>
+      <div style="margin: 10px;">
+        <button onclick="add()">Add</button>
+      </div>
+      <h3>Task-B</h3>
+      <div style="margin: 10px;">
+        <button onclick="execute('square')">Square</button>
+      </div>
+      <div style="margin: 10px;">
+        <button onclick="execute('cube')">cube</button>
+      </div>
+      <div style="margin: 10px;">
+        <button onclick="execute('squareRoot')">squareRoot</button>
+      </div>
+      <h3>Task-C</h3>
+      <div style="margin: 10px;">
+     <label for="name"> Enter User Here </label> 
+       <input id="name" name="name"/>
+        <button onclick="addUser()">Add User</button>
+        <button onclick="removeUser()">Remove User</button>
+        
+        <button onclick="subscribe()">Subscribe</button>
+        <button onclick="unsubscribe()">Unsubscribe</button>
+      </div>
+    </section>
+    <strong>Note: Check the out put in console panel</strong>
+  </body>
+</html>
